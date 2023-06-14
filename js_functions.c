@@ -234,15 +234,6 @@ int * with(int * array, int size, int index, int value)
 
 }
 
-/*int * join(int * array, int size, char symbol)
-{
-
-	for(int i = 0; i < size; ++i)
-	{
-		
-	}
-
-}*/
 
 int includes(int * array, int size, int symbol)
 {
@@ -302,27 +293,6 @@ int * fill(int* array, int size, int change_value, int start, int end)
 	}
 	return array;
 }
-void next_index(int * array)
-{
-	array++;
-}
-
-int * entries(int * array, int size)
-
-{
-	int tmp_size = size * 2;
-	int * tmp = (int*)calloc(size * 2, sizeof(int));
-	for(int i = 0; i < tmp_size; ++i)
-	{
-		tmp[i] = i;
-		tmp[i + 1] = array[i]; 
-		//next_index(tmp);
-		++i;
-	}
-	return tmp;
-}
-
-
 
 
 
@@ -331,82 +301,6 @@ int main()
 {
 	const int size1 = 5;
 	int array1[size1] = {11, 67, 78, 6, 32};
-
-	const int size2 = 3;
-	int array2[size2] = {4, 5, 6};
-
-	//int * new_array = concat(array1, array2, size1, size2);
-	/*for(int i = 0; i < size1 + size2; ++i)
-	{
-		printf("%i", new_array[i]);
-	}*/
-
-	//int num = some(array1, size1, test);
-	//printf("%i", num);	
-	
-	/*int new_size;
-	int* test_array = filter(array1, size1, test, &new_size);
-	for(int i = 0; i < new_size; ++i)
-	{
-		printf("%i ", test_array[i]);
-	}*/
-	
-	//forEach(array1, size1, callback);
-	//int number = index_of(array1, size1, 1);
-	//printf("%i", number);
-
-	//int n = last_index_of(array1, size1, 1);
-	//printf("%i", n);
-	
-	/*reverse(array1, size1);
-	for(int i = 0; i < size1; ++i)
-	{
-		
-		printf("%i", array1[i]);
-	}*/
-	
-	/*int * tmp = slice_in_2(array1,1, 4);
-		
-	for(int i = 0; i < 4 - 1; ++i)
-	{
-		printf("%i", tmp[i]);
-	}  
-	*/
-	for(int i = 0; i < size1; ++i)
-	{
-		printf("%i ,", array1[i]);
-	
-	}
-	
-	printf("\n");
-	/*
-	sort(array1, size1);
-	for(int i = 0; i < size1; ++i)
-	{
-		printf("%i ,",array1[i]);
-	}*/
-	/*int * tmp = with(array1, size1, 2, 90);
-	for(int i = 0; i < size1; ++i)
-	{
-		printf("%i, ", tmp[i]);
-	}*/
-	/*int n = includes(array1, size1, 214);
-	printf("%i", n);*/
-
-	/*int n = find(array1, size1, test, 45);
-	printf("%i", n);*/
-	
-	/*int * tmp = fill(array1,size1, 9, 2, 4);
-	for(int i = 0; i < size1; ++i)
-	{
-
-		printf("%i ,", tmp[i]);
-	}*/
-	int* tmp = entries(array1, size1);
-	for(int i = 0; i < size1 * 2; ++i)
-	{	
-		printf("%i ,", tmp[i]);
-	}	
 
 
 }
