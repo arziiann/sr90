@@ -241,12 +241,14 @@ int lastIndexOf( char* array,  char* string)
     const char* ptr = strstr(array, string);
     const char* lastPtr = NULL;
 
-    while (ptr != NULL) {
+    while (ptr != NULL) 
+    {
         lastPtr = ptr;
         ptr = strstr(ptr + 1, string);
     }
 
-    if (lastPtr == NULL) {
+    if (lastPtr == NULL)
+    {
         return -1;  
     }
 
